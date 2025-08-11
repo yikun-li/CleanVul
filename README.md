@@ -13,6 +13,7 @@
 
 * (2024-11-26) We released our paper and dataset for reproducibility.
 * (2025-03-13) We updated the dataset to include filtered functions that are marked as non-vulnerable.
+* (2025-08-11) We enriched the dataset with additional metadata information.
 
 ## 📜 Overview
 
