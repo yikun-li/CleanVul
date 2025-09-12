@@ -30,7 +30,7 @@ Our approach addresses the significant noise (40-75%) in existing vulnerability 
 ### Better Vulnerability Dataset
 
 * ✨ **High Quality**: Maximal 97.3% correctness rate for identifying genuine vulnerability fixes, comparable to manually curated datasets
-* ✨ **Scale**: Contains over 6,368 function pairs across multiple programming languages
+* ✨ **Scale**: Contains over 6,371 function pairs across multiple programming languages
 * ✨ **Language Coverage**: Includes Java, Python, C, JavaScript, C#, and C++ code
 * ✨ **Diverse Sources**: Derived from analysis of 5.3M commits across 127K GitHub repositories
 
@@ -42,8 +42,8 @@ The dataset provides different versions based on confidence thresholds:
 
 | Threshold | With Heuristics | Without Heuristics | Correctness (With Heuristics) | Correctness (Without Heuristics) |
 |-----------|-----------------|--------------------|-------------------------------|----------------------------------|
-| 1         | 26,518          | 29,810             | 43.1%                         | 37.5%                            |
-| 2         | 16,277          | 18,455             | 57.7%                         | 49.4%                            |
+| 1         | 26,549          | 29,841             | 43.1%                         | 37.5%                            |
+| 2         | 16,277          | 18,465             | 57.7%                         | 49.4%                            |
 | 3         | 8,198           | 9,026              | 90.6%                         | 76.5%                            |
 | 4         | 6,368           | 7,020              | 97.3%                         | 78.0%                            |
 
@@ -57,6 +57,14 @@ The thresholds represent confidence levels in our VulSifter methodology:
 * **Threshold 4**: Highest confidence level, prioritizing precision over recall, offering near-perfect correctness (97.3% with heuristics) but with a smaller dataset size
 
 The "With Heuristics" versions apply additional filtering rules to remove test-related changes and other non-vulnerability modifications, resulting in significantly higher correctness rates compared to versions without these heuristics.
+
+**Important detail about Threshold:**
+
+* In the dataset, pairs are stored separately by score:
+  * `vulnerability_score_3.csv` contains pairs with score = 3.
+  * `vulnerability_score_4.csv` contains pairs with score = 4.
+* To reconstruct Threshold 3 (score ≥ 3), you need to combine `vulnerability_score_3.csv` (6368 items) and `vulnerability_score_4.csv` (1830 items), giving a total of 8198 items.
+* We keep them separate in the dataset to avoid duplication and to let users choose between strict (score=4 only) or inclusive (score ≥ 3) subsets.
 
 ## 📝 Citation
 
