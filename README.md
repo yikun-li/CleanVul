@@ -17,7 +17,7 @@
 
 ## 📜 Overview
 
-CleanVul introduces VulSifter, an innovative methodology that combines Large Language Models (LLMs) with heuristic to automatically detect vulnerability-fixing changes within vulnerability-fixing commits (VFCs). This approach has enabled us to create two high-quality datasets: the primary CleanVul dataset containing 8,203 functions with 90.6% correctness, and a more precise variant comprising 6,371 functions with 97.3% correctness. Both datasets demonstrate quality comparable to or exceeding established benchmarks such as SVEN (94.0%) and PrimeVul (86.0%).
+CleanVul introduces VulSifter, an innovative methodology that combines Large Language Models (LLMs) with heuristic to automatically detect vulnerability-fixing changes within vulnerability-fixing commits (VFCs). This approach has enabled us to create two high-quality datasets: the primary CleanVul dataset containing 8,198 functions with 90.6% correctness, and a more precise variant comprising 6,371 functions with 97.3% correctness. Both datasets demonstrate quality comparable to or exceeding established benchmarks such as SVEN (94.0%) and PrimeVul (86.0%).
 
 Our approach addresses the significant noise (40-75%) in existing vulnerability datasets caused by indiscriminate labeling of all modifications in vulnerability-fixing commits as vulnerability-related.
 
@@ -30,7 +30,7 @@ Our approach addresses the significant noise (40-75%) in existing vulnerability 
 ### Better Vulnerability Dataset
 
 * ✨ **High Quality**: Maximal 97.3% correctness rate for identifying genuine vulnerability fixes, comparable to manually curated datasets
-* ✨ **Scale**: Contains over 6,371 function pairs across multiple programming languages
+* ✨ **Scale**: Contains over 6,368 function pairs across multiple programming languages
 * ✨ **Language Coverage**: Includes Java, Python, C, JavaScript, C#, and C++ code
 * ✨ **Diverse Sources**: Derived from analysis of 5.3M commits across 127K GitHub repositories
 
@@ -42,10 +42,10 @@ The dataset provides different versions based on confidence thresholds:
 
 | Threshold | With Heuristics | Without Heuristics | Correctness (With Heuristics) | Correctness (Without Heuristics) |
 |-----------|-----------------|--------------------|-------------------------------|----------------------------------|
-| 1         | 26,549          | 29,841             | 43.1%                         | 37.5%                            |
-| 2         | 16,287          | 18,465             | 57.7%                         | 49.4%                            |
-| 3         | 8,203           | 9,031              | 90.6%                         | 76.5%                            |
-| 4         | 6,371           | 7,023              | 97.3%                         | 78.0%                            |
+| 1         | 26,518          | 29,810             | 43.1%                         | 37.5%                            |
+| 2         | 16,277          | 18,455             | 57.7%                         | 49.4%                            |
+| 3         | 8,198           | 9,026              | 90.6%                         | 76.5%                            |
+| 4         | 6,368           | 7,020              | 97.3%                         | 78.0%                            |
 
 ### Understanding Thresholds
 
