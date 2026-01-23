@@ -3,6 +3,7 @@
 <p align="left">
     <a href="https://arxiv.org/abs/2411.17274"><img src="https://img.shields.io/badge/arXiv-2411.17274-b31b1b.svg?style=for-the-badge"></a>
     <a href="https://opensource.org/license/mit/"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a>
+    <a href="https://huggingface.co/datasets/yikun-li/CleanVul"><img src="https://img.shields.io/badge/Dataset-HuggingFace-yellow.svg?style=for-the-badge"></a>
 </p>
 
 <p align="left">
@@ -35,6 +36,12 @@ Our approach addresses the significant noise (40-75%) in existing vulnerability 
 * ✨ **Diverse Sources**: Derived from analysis of 5.3M commits across 127K GitHub repositories
 
 ## 📚 CleanVul Dataset
+
+### Dataset Access
+
+The CleanVul datasets are hosted on Hugging Face for ease of access and reproducibility:
+
+👉 **Hugging Face Dataset**: [CleanVul](https://huggingface.co/datasets/yikun-li/CleanVul)
 
 ### Dataset Statistics
 
