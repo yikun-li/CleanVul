@@ -1,8 +1,4 @@
-# CleanVul: Automatic Function-Level Vulnerability Detection in Code Commits Using LLM Heuristics
-
-<p align="left">
-    <a href="https://opensource.org/license/mit/"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a>
-</p>
+# CleanVul: Toward High-Quality Function-Level Vulnerability Datasets via LLM-Based Noise Reduction
 
 <p align="left">
     📜 &nbsp;<a href="#-overview">Overview</a>
