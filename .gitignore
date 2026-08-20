@@ -8,3 +8,4 @@
 *.out
 *.synctex.gz
 .DS_Store
+__pycache__/
